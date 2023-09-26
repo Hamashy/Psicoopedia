@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'user',
     'consultorio',
     'paciente',
+    'citas',
 
     'rest_framework_simplejwt',
     'rest_framework',
