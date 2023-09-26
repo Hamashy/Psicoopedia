@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from consultorio.models import Consultorio  # Asegúrate de importar tu modelo Consultorio aquí\
 from rest_framework.serializers import ModelSerializer
 
+from consultorio.models import Consultorio  # Asegúrate de importar tu modelo Consultorio aquí\
 
 
 class ConsultorioSerializer(ModelSerializer):

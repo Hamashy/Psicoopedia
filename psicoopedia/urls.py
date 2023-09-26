@@ -15,11 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from consultorio.api.router import router_consultorio
 
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+
+
 from user.api.router import router_user
+from consultorio.api.router import router_consultorio
+from paciente.api.router import router_paciente
+
+
+
+
+
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -41,4 +49,5 @@ urlpatterns = [
     path('api/', include('user.api.router')),
     path('api/', include(router_user.urls)),
     path('api/', include(router_consultorio.urls)),
+    path('api/', include(router_paciente.urls)),
 ]
