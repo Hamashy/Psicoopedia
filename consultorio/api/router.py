@@ -1,6 +1,9 @@
 from django.db import router
 from rest_framework.routers import DefaultRouter
+
 from consultorio.api.views import ConsultorioApiViewSet
+
+
 
 router_consultorio = DefaultRouter()
 
