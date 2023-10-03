@@ -21,6 +21,8 @@ from drf_yasg import openapi
 
 
 from user.api.router import router_user
+
+
 from consultorio.api.router import router_consultorio
 from paciente.api.router import router_paciente, router_practicante
 from citas.api.router import router_cita
